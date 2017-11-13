@@ -1,14 +1,24 @@
 {
   "name": "webpack-qiniu-plugin",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Webpack plugin for Qiniu cloud storage",
   "main": "index.js",
-  "author": "MiRinZhang",
-  "license": "MIT",
   "scripts": {
     "build": "npx rollup -c",
     "release": "npm run build && npm version patch && npm publish --reg=https://registry.npmjs.com run build"
   },
+  "files": [
+    "webpack",
+    "qiniu"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiRinZhang/webpack-qiniu-plugin.git"
+  },
+  "author": "MiRinZhang <noodles@yabing.me>",
+  "license": "MIT",
+  "bugs": {"url": "https://github.com/MiRinZhang/webpack-qiniu-plugin/issues"},
+  "homepage": "https://github.com/MiRinZhang/webpack-qiniu-plugin",
   "dependencies": {
     "qiniu": "^7.1.1",
     "slash": "^1.0.0",
