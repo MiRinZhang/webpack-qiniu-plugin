@@ -8,6 +8,8 @@ Webpack plugin for Qiniu cloud storage (qiniu@^7.1.1)
 
 #### Config
 
+`webpack.config.js`
+
 * import
 
 ```javascript
