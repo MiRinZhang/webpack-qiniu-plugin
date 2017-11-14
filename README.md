@@ -17,7 +17,18 @@ const qiniuPlugin = require('webpack-qiniu-plugin');
 * config
 
 ```javascript
+const publicPath = 'https://cdn.com/[hash]/'
+
 ...
+// config publicPath
+output: {
+  path: config.build.assetsRoot,
+  filename: utils.assetsPath('js/[name].[hash].js'),
+  chunkFilename: utils.assetsPath('js/[name].[hash].js'),
+  publicPath
+},
+...
+// config plugins
 plugins: [
   new qiniuPlugin({
 	  ACCESS_KEY: 'qiniu access_key',
