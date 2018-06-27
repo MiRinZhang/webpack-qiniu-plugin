@@ -30,6 +30,7 @@ export default class Qiniu {
 	apply(compiler) {
 		compiler.plugin('after-emit', (compilation, callback) => {
 			const { assets, hash } = compilation;
+			console.log(`[BUILD HASH]: ${hash}`);
 			const promise = Object.keys(assets).map((fileName) => this.uploader(fileName, assets[fileName].existsAt, hash));
 
 			Promise.all(promise).then(_ => {
