@@ -24,9 +24,9 @@ const publicPath = 'https://cdn.com/[hash]/'
 ...
 // config publicPath
 output: {
-  path: config.build.assetsRoot,
-  filename: utils.assetsPath('js/[name].[hash].js'),
-  chunkFilename: utils.assetsPath('js/[name].[hash].js'),
+  path: '/dist/',
+  filename: '/static/js/[name].[hash].js',
+  chunkFilename: '/staic/js/[name].[hash].js',
   publicPath
 },
 ...
